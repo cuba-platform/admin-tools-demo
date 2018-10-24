@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<auto-import>
+    <auto-import-file path="com/haulmont/demo/admintools/Roles.zip" bean="admintools_DefaultAutoImportProcessor"/>
+    <auto-import-file path="com/haulmont/demo/admintools/Groups.zip" bean="autoimport_GroupsAutoImportProcessor"/>
+    <auto-import-file path="com/haulmont/demo/admintools/Reports.zip" bean="autoimport_ReportsAutoImportProcessor"/>
+    <!--Project import processor-->
+    <auto-import-file path="com/haulmont/demo/admintools/Groups.zip" class="com.haulmont.demo.admintools.processors.SampleAutoImportProcessor"/>
+    <!--Invalid bean name-->
+    <auto-import-file path="com/haulmont/demo/admintools/Groups.zip" bean="autoimport_InvalidAutoImportProcessor"/>
+    <!--Invalid class name-->
+    <auto-import-file path="com/haulmont/demo/admintools/Groups.zip" class="com.example.InvalidAutoImportProcessor"/>
+    <!--Invalid path-->
+    <auto-import-file path="com/example/invalid.zip" bean="autoimport_ReportsAutoImportProcessor"/>
+
+</auto-import>
